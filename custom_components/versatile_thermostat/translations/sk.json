@@ -23,17 +23,18 @@
           "cycle_min": "Trvanie cyklu (minúty)",
           "temp_min": "Minimálna povolená teplota",
           "temp_max": "Maximálna povolená teplota",
+          "step_temperature": "Teplotný krok",
           "device_power": "Napájanie zariadenia",
           "use_central_mode": "Povoliť ovládanie centrálnou entitou (potrebná centrálna konfigurácia)",
           "use_window_feature": "Použite detekciu okien",
           "use_motion_feature": "Použite detekciu pohybu",
           "use_power_feature": "Použite správu napájania",
           "use_presence_feature": "Použite detekciu prítomnosti",
-          "use_main_central_config": "Použite centrálnu hlavnú konfiguráciu"
+          "use_main_central_config": "Použite centrálnu hlavnú konfiguráciu",
+          "add_central_boiler_control": "Pridajte centrálny kotol. Začiarknutím tohto políčka pridáte ovládanie do centrálneho kotla. Po zaškrtnutí tohto políčka budete musieť nakonfigurovať VTherm, ktorý bude mať ovládanie centrálneho kotla, aby sa prejavilo. Ak jeden VTherm potrebuje zahriať, kotol sa zapne. Ak žiadny VTherm nepotrebuje ohrev, kotol sa vypne. Príkazy na zapnutie/vypnutie centrálneho kotla sú uvedené na nasledujúcej konfiguračnej stránke",
+          "used_by_controls_central_boiler": "Používa sa centrálnym kotlom. Skontrolujte, či má mať tento VTherm ovládanie na centrálnom kotli"
         },
         "data_description": {
-          "use_central_mode": "Zaškrtnutím povolíte ovládanie VTherm pomocou vybraných entít central_mode",
-          "use_main_central_config": "Začiarknite, ak chcete použiť centrálnu hlavnú konfiguráciu. Zrušte začiarknutie, ak chcete použiť špecifickú hlavnú konfiguráciu pre tento VTherm",
           "external_temperature_sensor_entity_id": "ID entity snímača vonkajšej teploty. Nepoužíva sa, ak je zvolená centrálna konfigurácia"
         }
       },
@@ -45,6 +46,7 @@
           "heater_entity2_id": "2. spínač ohrievača",
           "heater_entity3_id": "3. spínač ohrievača",
           "heater_entity4_id": "4. spínač ohrievača",
+          "heater_keep_alive": "Prepnite interval udržiavania v sekundách",
           "proportional_function": "Algoritmus",
           "climate_entity_id": "1. základná klíma",
           "climate_entity2_id": "2. základná klíma",
@@ -66,6 +68,7 @@
           "heater_entity2_id": "Voliteľné ID entity 2. ohrievača. Ak sa nepoužíva, nechajte prázdne",
           "heater_entity3_id": "Voliteľné ID entity 3. ohrievača. Ak sa nepoužíva, nechajte prázdne",
           "heater_entity4_id": "Voliteľné ID entity 4. ohrievača. Ak sa nepoužíva, nechajte prázdne",
+          "heater_keep_alive": "Voliteľný interval obnovy stavu spínača ohrievača. Ak to nie je potrebné, nechajte prázdne.",
           "proportional_function": "Algoritmus, ktorý sa má použiť (TPI je zatiaľ jediný)",
           "climate_entity_id": "ID základnej klimatickej entity",
           "climate_entity2_id": "2. základné identifikačné číslo klimatickej entity",
@@ -130,7 +133,8 @@
           "window_auto_open_threshold": "Prah poklesu teploty pre automatickú detekciu otvoreného okna (v °/hodina)",
           "window_auto_close_threshold": "Prahová hodnota zvýšenia teploty pre koniec automatickej detekcie (v °/hodina)",
           "window_auto_max_duration": "Maximálne trvanie automatickej detekcie otvoreného okna (v min)",
-          "use_window_central_config": "Použite centrálnu konfiguráciu okna"
+          "use_window_central_config": "Použite centrálnu konfiguráciu okna",
+          "window_action": "Akcia"
         },
         "data_description": {
           "window_sensor_entity_id": "Nechajte prázdne, ak nemáte použiť žiadny okenný senzor",
@@ -138,7 +142,8 @@
           "window_auto_open_threshold": "Odporúčaná hodnota: medzi 3 a 10. Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
           "window_auto_close_threshold": "Odporúčaná hodnota: 0. Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
           "window_auto_max_duration": "Odporúčaná hodnota: 60 (jedna hodina). Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
-          "use_window_central_config": "Začiarknite, ak chcete použiť konfiguráciu centrálneho okna. Zrušte začiarknutie, ak chcete použiť špecifickú konfiguráciu okna pre tento VTherm"
+          "use_window_central_config": "Začiarknite, ak chcete použiť konfiguráciu centrálneho okna. Zrušte začiarknutie, ak chcete použiť špecifickú konfiguráciu okna pre tento VTherm",
+          "window_action": "Akcia, ktorá sa má vykonať, ak sa okno zistí ako otvorené"
         }
       },
       "motion": {
@@ -255,17 +260,18 @@
           "cycle_min": "Trvanie cyklu (minúty)",
           "temp_min": "Minimálna povolená teplota",
           "temp_max": "Maximálna povolená teplota",
+          "step_temperature": "Teplotný krok",
           "device_power": "Výkon zariadenia (kW)",
           "use_central_mode": "Povoliť ovládanie centrálnou entitou (potrebná centrálna konfigurácia)",
           "use_window_feature": "Použite detekciu okien",
           "use_motion_feature": "Použite detekciu pohybu",
           "use_power_feature": "Použite správu napájania",
           "use_presence_feature": "Použite detekciu prítomnosti",
-          "use_main_central_config": "Použite centrálnu hlavnú konfiguráciu"
+          "use_main_central_config": "Použite centrálnu hlavnú konfiguráciu",
+          "add_central_boiler_control": "Pridajte centrálny kotol. Začiarknutím tohto políčka pridáte ovládanie do centrálneho kotla. Po zaškrtnutí tohto políčka budete musieť nakonfigurovať VTherm, ktorý bude mať ovládanie centrálneho kotla, aby sa prejavilo. Ak jeden VTherm potrebuje zahriať, kotol sa zapne. Ak žiadny VTherm nepotrebuje ohrev, kotol sa vypne. Príkazy na zapnutie/vypnutie centrálneho kotla sú uvedené na nasledujúcej konfiguračnej stránke",
+          "used_by_controls_central_boiler": "Používa sa centrálnym kotlom. Skontrolujte, či má mať tento VTherm ovládanie na centrálnom kotli"
         },
         "data_description": {
-          "use_central_mode": "Zaškrtnutím povolíte ovládanie VTherm pomocou vybraných entít central_mode",
-          "use_main_central_config": "Začiarknite, ak chcete použiť centrálnu hlavnú konfiguráciu. Ak chcete použiť špecifickú konfiguráciu pre tento VTherm, zrušte začiarknutie",
           "external_temperature_sensor_entity_id": "ID entity snímača vonkajšej teploty. Nepoužíva sa, ak je zvolená centrálna konfigurácia"
         }
       },
@@ -277,6 +283,7 @@
           "heater_entity2_id": "2. spínač ohrievača",
           "heater_entity3_id": "3. spínač ohrievača",
           "heater_entity4_id": "4. spínač ohrievača",
+          "heater_keep_alive": "Prepnite interval udržiavania v sekundách",
           "proportional_function": "Algoritmus",
           "climate_entity_id": "Základná klíma",
           "climate_entity2_id": "2. základná klíma",
@@ -298,6 +305,7 @@
           "heater_entity2_id": "Voliteľné ID entity 2. ohrievača. Ak sa nepoužíva, nechajte prázdne",
           "heater_entity3_id": "Voliteľné ID entity 3. ohrievača. Ak sa nepoužíva, nechajte prázdne",
           "heater_entity4_id": "Voliteľné ID entity 4. ohrievača. Ak sa nepoužíva, nechajte prázdne",
+          "heater_keep_alive": "Voliteľný interval obnovy stavu spínača ohrievača. Ak to nie je potrebné, nechajte prázdne.",
           "proportional_function": "Algoritmus, ktorý sa má použiť (TPI je zatiaľ jediný)",
           "climate_entity_id": "ID základnej klimatickej entity",
           "climate_entity2_id": "2. základný identifikátor klimatickej entity",
@@ -362,7 +370,8 @@
           "window_auto_open_threshold": "Prah poklesu teploty pre automatickú detekciu otvoreného okna (v °/hodina)",
           "window_auto_close_threshold": "Prahová hodnota zvýšenia teploty pre koniec automatickej detekcie (v °/hodina)",
           "window_auto_max_duration": "Maximálne trvanie automatickej detekcie otvoreného okna (v min)",
-          "use_window_central_config": "Použite centrálnu konfiguráciu okna"
+          "use_window_central_config": "Použite centrálnu konfiguráciu okna",
+          "window_action": "Akcia"
         },
         "data_description": {
           "window_sensor_entity_id": "Nechajte prázdne, ak nemáte použiť žiadny okenný senzor",
@@ -370,7 +379,8 @@
           "window_auto_open_threshold": "Odporúčaná hodnota: medzi 3 a 10. Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
           "window_auto_close_threshold": "Odporúčaná hodnota: 0. Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
           "window_auto_max_duration": "Odporúčaná hodnota: 60 (jedna hodina). Ak sa nepoužíva automatická detekcia otvoreného okna, nechajte prázdne",
-          "use_window_central_config": "Začiarknite, ak chcete použiť konfiguráciu centrálneho okna. Zrušte začiarknutie, ak chcete použiť špecifickú konfiguráciu okna pre tento VTherm"
+          "use_window_central_config": "Začiarknite, ak chcete použiť konfiguráciu centrálneho okna. Zrušte začiarknutie, ak chcete použiť špecifickú konfiguráciu okna pre tento VTherm",
+          "window_action": "Akcia, ktorá sa má vykonať, ak sa okno zistí ako otvorené"
         }
       },
       "motion": {
@@ -458,7 +468,8 @@
       "unknown": "Neočakávaná chyba",
       "unknown_entity": "Neznáme ID entity",
       "window_open_detection_method": "Mala by sa použiť iba jedna metóda detekcie otvoreného okna. Použite senzor alebo automatickú detekciu cez teplotný prah, ale nie oboje",
-      "no_central_config": "Nemôžete zaškrtnúť „použiť centrálnu konfiguráciu“, pretože sa nenašla žiadna centrálna konfigurácia. Aby ste ho mohli používať, musíte si vytvoriť všestranný termostat typu „Central Configuration“."
+      "no_central_config": "Nemôžete zaškrtnúť „použiť centrálnu konfiguráciu“, pretože sa nenašla žiadna centrálna konfigurácia. Aby ste ho mohli používať, musíte si vytvoriť všestranný termostat typu „Central Configuration“.",
+      "service_configuration_format": "Formát konfigurácie služby je nesprávny"
     },
     "abort": {
       "already_configured": "Zariadenie je už nakonfigurované"
@@ -490,6 +501,22 @@
         "auto_fan_medium": "Stredný",
         "auto_fan_high": "Vysoký",
         "auto_fan_turbo": "Turbo"
+      }
+    },
+    "window_action": {
+      "options": {
+        "window_turn_off": "Vypnúť",
+        "window_fan_only": "Len ventilátor",
+        "window_frost_temp": "Ochrana proti námraze",
+        "window_eco_temp": "Eko"
+      }
+    },
+    "presets": {
+      "options": {
+        "frost": "Ochrana proti námraze",
+        "eco": "Eko",
+        "comfort": "Komfort",
+        "boost": "Boost"
       }
     }
   },
